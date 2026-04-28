@@ -1,0 +1,67 @@
+
+Dex Build Report
+----------------
+Entries parsed:   2474
+Entries written:  0
+Regions detected: 4
+Rows read:       1163
+
+Dex gaps:          0
+Evolution splits:  0
+Illegal forms:     0
+Duplicate dex:     0
+Duplicate species: 0
+Missing Dex:       0
+
+No validation issues detected.
+
+Regional Distribution
+---------------------
+Region 0: 493 species
+Region 1: 493 species
+Region 2: 493 species
+Region 3: 493 species
+
+Regional Overlap
+----------------
+R0: 77
+
+R0 + R1: 66
+
+R0 + R1 + R2: 25
+
+R0 + R1 + R2 + R3: 142
+
+R0 + R1 + R3: 24
+
+R0 + R2: 33
+
+R0 + R2 + R3: 38
+
+R0 + R3: 88
+
+R1: 99
+
+R1 + R2: 80
+
+R1 + R2 + R3: 15
+
+R1 + R3: 42
+
+R2: 91
+
+R2 + R3: 69
+
+R3: 75
+
+Type Distribution
+-----------------
+
+Region 0
+
+Region 1
+
+Region 2
+
+Region 3
+

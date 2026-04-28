@@ -1,0 +1,361 @@
+
+Dex Build Report
+----------------
+Entries parsed:   2488
+Entries written:  1016
+Regions detected: 4
+Rows read:       1235
+
+Dex gaps:          0
+Evolution splits:  0
+Illegal forms:     0
+Duplicate dex:     0
+Duplicate species: 0
+Missing Dex:       0
+
+No validation issues detected.
+
+Regional Distribution
+---------------------
+Region 0: 449 species
+Region 1: 443 species
+Region 2: 457 species
+Region 3: 459 species
+
+
+Regional Combination Matrix
+---------------------------
+
+Mask  R0 R1 R2 R3  Count
+-------------------------
+0001   1  0  0  0   76
+0010   0  1  0  0   99
+0011   1  1  0  0   52
+0100   0  0  1  0   81
+0101   1  0  1  0   35
+0110   0  1  1  0   58
+0111   1  1  1  0   25
+1000   0  0  0  1   73
+1001   1  0  0  1   64
+1010   0  1  0  1   40
+1011   1  1  0  1   28
+1100   0  0  1  1   66
+1101   1  0  1  1   33
+1110   0  1  1  1   19
+1111   1  1  1  1   86
+
+Regional Signature Species
+--------------------------
+
+Region 0 Unique (76)
+  ABSOL
+  AEGISLASH
+  AERODACTYL
+  ARCHALUDON
+  ARCTOVISH
+  ARCTOZOLT
+  ARMAROUGE
+  BAGON
+  BASCULEGION
+  BIBAREL
+  BIDOOF
+  BLIPBUG
+  CETITAN
+  CETODDLE
+  CHATOT
+  CRYOGONAL
+  DELIBIRD
+  DEWOTT
+  DIPPLIN
+  DOTTLER
+  ... (56 more)
+
+Region 1 Unique (99)
+  ALCREMIE
+  AMPHAROS
+  APPLETUN
+  AROMATISSE
+  ARROKUDA
+  BARRASKEWDA
+  BASTIODON
+  BOUFFALANT
+  CONKELDURR
+  CRAMORANT
+  CRANIDOS
+  CURSOLA
+  DARTRIX
+  DEERLING
+  DELCATTY
+  DUBWOOL
+  DUCKLETT
+  ELDEGOSS
+  ELECTRODE
+  ESCAVALIER
+  ... (79 more)
+
+Region 2 Unique (81)
+  AMOONGUSS
+  ANORITH
+  ARAQUANID
+  ARBOK
+  ARCHEN
+  ARCHEOPS
+  ARMALDO
+  BEEDRILL
+  BELLIBOLT
+  BEWEAR
+  BLITZLE
+  BOLTUND
+  CARRACOSTA
+  CLAMPERL
+  COMFEY
+  CRADILY
+  CROCALOR
+  DEWPIDER
+  EKANS
+  FINIZEN
+  ... (61 more)
+
+Region 3 Unique (73)
+  ACCELGOR
+  AIPOM
+  AMAURA
+  AMBIPOM
+  AURORUS
+  BANETTE
+  BEHEEYEM
+  BELLSPROUT
+  CERULEDGE
+  CLOBBOPUS
+  CLODSIRE
+  COFAGRIGUS
+  CYCLIZAR
+  CYNDAQUIL
+  DARMANITAN
+  DARUMAKA
+  DEWGONG
+  DODRIO
+  DODUO
+  ELECTRIKE
+  ... (53 more)
+
+
+Strong Signature Pokémon
+------------------------
+
+Region 0
+ARCHALUDON      600
+SALAMENCE       600
+HYDRAPPLE       540
+MILOTIC         540
+PORYGONZ        535
+DURALUDON       535
+BASCULEGION     530
+ARMAROUGE       525
+CETITAN         521
+MRRIME          520
+Region 1
+FLORGES         552
+URSALUNA        550
+SNORLAX         540
+MEOWSCARADA     530
+EXEGGUTOR       530
+AMPHAROS        510
+CURSOLA         510
+POLIWRATH       510
+SINISTCHA       508
+NIDOQUEEN       505
+Region 2
+SLAKING         670
+KOMMOO          600
+ARCHEOPS        567
+TANGROWTH       535
+SKELEDIRGE      530
+QUAQUAVAL       530
+LICKILICKY      515
+SIRFETCHD       507
+PINSIR          500
+BEWEAR          500
+Region 3
+CERULEDGE       525
+PROBOPASS       525
+TYRANTRUM       521
+AURORUS         521
+FLYGON          520
+SHUCKLE         505
+TOXTRICITY      502
+CYCLIZAR        501
+REVAVROOM       500
+TALONFLAME      499
+
+Type Distribution
+-----------------
+BUG
+R0 [██████████░░░░░░░░░░] 46 (52%)
+R1 [██████████░░░░░░░░░░] 44 (50%)
+R2 [█████████████░░░░░░░] 58 (65%)
+R3 [█████████░░░░░░░░░░░] 43 (48%)
+DARK
+R0 [███████░░░░░░░░░░░░░] 32 (36%)
+R1 [██████░░░░░░░░░░░░░░] 30 (34%)
+R2 [███████░░░░░░░░░░░░░] 35 (39%)
+R3 [██████░░░░░░░░░░░░░░] 29 (32%)
+DRAGON
+R0 [██████░░░░░░░░░░░░░░] 29 (32%)
+R1 [████░░░░░░░░░░░░░░░░] 19 (21%)
+R2 [█████░░░░░░░░░░░░░░░] 23 (26%)
+R3 [██████░░░░░░░░░░░░░░] 28 (31%)
+ELECTRIC
+R0 [█████░░░░░░░░░░░░░░░] 25 (28%)
+R1 [█████░░░░░░░░░░░░░░░] 23 (26%)
+R2 [███████░░░░░░░░░░░░░] 31 (35%)
+R3 [███████░░░░░░░░░░░░░] 31 (35%)
+FAIRY
+R0 [██████░░░░░░░░░░░░░░] 27 (30%)
+R1 [████████░░░░░░░░░░░░] 38 (43%)
+R2 [███████░░░░░░░░░░░░░] 35 (39%)
+R3 [█████░░░░░░░░░░░░░░░] 25 (28%)
+FIGHTING
+R0 [██████░░░░░░░░░░░░░░] 27 (30%)
+R1 [█████░░░░░░░░░░░░░░░] 25 (28%)
+R2 [██████░░░░░░░░░░░░░░] 30 (34%)
+R3 [██████░░░░░░░░░░░░░░] 28 (31%)
+FIRE
+R0 [███████░░░░░░░░░░░░░] 33 (37%)
+R1 [████░░░░░░░░░░░░░░░░] 21 (23%)
+R2 [████████░░░░░░░░░░░░] 37 (42%)
+R3 [██████████░░░░░░░░░░] 47 (53%)
+FLYING
+R0 [███████████░░░░░░░░░] 50 (56%)
+R1 [█████████░░░░░░░░░░░] 40 (45%)
+R2 [██████████░░░░░░░░░░] 48 (54%)
+R3 [███████████░░░░░░░░░] 51 (57%)
+GHOST
+R0 [█████████░░░░░░░░░░░] 41 (46%)
+R1 [████░░░░░░░░░░░░░░░░] 20 (22%)
+R2 [██████░░░░░░░░░░░░░░] 28 (31%)
+R3 [███████░░░░░░░░░░░░░] 34 (38%)
+GRASS
+R0 [██████████░░░░░░░░░░] 48 (54%)
+R1 [█████████████████░░░] 79 (89%)
+R2 [█████████████░░░░░░░] 61 (69%)
+R3 [██████████░░░░░░░░░░] 47 (53%)
+GROUND
+R0 [███████░░░░░░░░░░░░░] 32 (36%)
+R1 [███████░░░░░░░░░░░░░] 34 (38%)
+R2 [████████░░░░░░░░░░░░] 38 (43%)
+R3 [████████████░░░░░░░░] 55 (62%)
+ICE
+R0 [████████░░░░░░░░░░░░] 37 (42%)
+R1 [███░░░░░░░░░░░░░░░░░] 15 (17%)
+R2 [████░░░░░░░░░░░░░░░░] 20 (22%)
+R3 [██████░░░░░░░░░░░░░░] 27 (30%)
+NORMAL
+R0 [███████████░░░░░░░░░] 50 (56%)
+R1 [███████████████░░░░░] 70 (79%)
+R2 [██████████████░░░░░░] 62 (70%)
+R3 [██████████░░░░░░░░░░] 46 (52%)
+POISON
+R0 [██████░░░░░░░░░░░░░░] 28 (31%)
+R1 [█████████░░░░░░░░░░░] 41 (46%)
+R2 [█████████░░░░░░░░░░░] 40 (45%)
+R3 [████████░░░░░░░░░░░░] 38 (43%)
+PSYCHIC
+R0 [██████████░░░░░░░░░░] 44 (50%)
+R1 [████████░░░░░░░░░░░░] 39 (44%)
+R2 [██████░░░░░░░░░░░░░░] 29 (32%)
+R3 [████████░░░░░░░░░░░░] 37 (42%)
+ROCK
+R0 [███████░░░░░░░░░░░░░] 33 (37%)
+R1 [███████░░░░░░░░░░░░░] 32 (36%)
+R2 [███████░░░░░░░░░░░░░] 31 (35%)
+R3 [████████░░░░░░░░░░░░] 39 (44%)
+STEEL
+R0 [███████░░░░░░░░░░░░░] 35 (39%)
+R1 [█████░░░░░░░░░░░░░░░] 22 (25%)
+R2 [██░░░░░░░░░░░░░░░░░░] 10 (11%)
+R3 [████████░░░░░░░░░░░░] 37 (42%)
+WATER
+R0 [███████████████░░░░░] 66 (75%)
+R1 [██████████████░░░░░░] 65 (73%)
+R2 [████████████████████] 88 (100%)
+R3 [███████████████░░░░░] 68 (77%)
+
+
+BST Analysis
+------------
+
+Region 0
+Average BST (all):          409
+Average BST (first-stage):  304
+Average BST (final stage):  495
+Lowest BST: 180 (SUNKERN)
+Highest BST: 600 (ARCHALUDON)
+
+Region 1
+Average BST (all):          397
+Average BST (first-stage):  299
+Average BST (final stage):  490
+Lowest BST: 180 (SUNKERN)
+Highest BST: 600 (TYRANITAR)
+
+Region 2
+Average BST (all):          400
+Average BST (first-stage):  299
+Average BST (final stage):  492
+Lowest BST: 175 (WISHIWASHI)
+Highest BST: 670 (SLAKING)
+
+Region 3
+Average BST (all):          405
+Average BST (first-stage):  302
+Average BST (final stage):  493
+Lowest BST: 195 (CATERPIE)
+Highest BST: 600 (METAGROSS)
+
+
+Power Tier Histogram
+--------------------
+
+Tier              R  0 R  1 R  2 R  3
+-------------------------------------
+Low (<350)         136 153 149 144
+Mid (350–449)       73  77  79  71
+Strong (450–549)   180 167 165 186
+High (550–599)       3   5   2   4
+Elite (600-649)      6   4   6   3
+Apex (650+)          0   0   1   0
+
+Regional BST Power Curve
+------------------------
+
+200–299
+R1 ███████████████ 72
+R2 ███████████████ 72
+R3 ██████████████ 69
+R0 ███████████ 56
+
+300–399
+R1 ███████████████████████ 112
+R2 █████████████████████ 103
+R3 ██████████████████████ 108
+R0 ██████████████████████ 104
+
+400–499
+R1 █████████████████████████████ 138
+R2 ██████████████████████████████ 141
+R3 █████████████████████████████ 138
+R0 ████████████████████████████ 132
+
+500–599
+R1 ███████████████ 75
+R2 ███████████████ 74
+R3 ██████████████████ 88
+R0 ████████████████████ 94
+
+600–699
+R1  4
+R2 █ 7
+R3  3
+R0 █ 6
+

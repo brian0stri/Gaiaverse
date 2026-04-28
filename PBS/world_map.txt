@@ -1,0 +1,46 @@
+[0]
+Name = Region Alpha
+Point = 24,84,-6,Port Alpha
+Point = 24,66,-6,C1
+Point = 56,84,-4,C2
+Point = 56,50,-4,C3
+Point = 40,66,-5,Wild Zone 5
+Point = 40,20,-5,C4
+Point = 18,20,-6,Ruins 1
+Point = 54,10,-5,Wild Zone 10 East
+Point = 74,20,-4,Ruins 2
+[1]
+Name = Region Beta
+Point = 134,112,0,Port Beta
+Point = 134,100,0,C1 
+Point = 118,100,-1,C2
+Point = 118,118,-1,C3
+Point = 106,110,-2,C4
+Point = 110,130,-1,C5
+Point = 98,120,-2, Ruins 1
+Point = 136,138,0,C6
+Point = 90,90,-3,C7
+Point = 90,128,-3, Wild Zone 7
+[2]
+Name = Region Gamma
+Point = 206,216,5,Port Gamma
+Point = 230,212,6,Ruins
+Point = 204,198,5,C1 
+Point = 236,226,6,Volcano
+Point = 228,198,5,C2
+Point = 240,188,6,Great Desert
+Point = 250,212,7,C3
+Point = 246,244,7,Great Bamboo Forest
+[3]
+Name = Region Delta
+Point = 346,124,11,Port Delta
+Point = 346,142,11,C1 
+Point = 312,142,10,C2
+Point = 312,152,10,The Great Maze
+Point = 296,148,9,The Great Barren
+Point = 278,154,8,Ruins
+Point = 300,188,9,C3
+Point = 286,138,8,C4 
+Point = 290,124,9,Wild Zone 10
+Point = 264,138,7,C5
+Point = 264,124,7,Uncharted Ruins

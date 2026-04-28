@@ -1,0 +1,92 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[0]
+Name = Region Alpha
+Filename = mapRegion0.png
+Point = 7,20,8,21,-6,Port Alpha,Oak's Lab,32,8,8
+Point = 7,18,8,19,-6,Wild Zone 1
+Point = 7,16,8,17,-6,C1
+Point = 9,20,14,21,-5,Wild Zone 2
+Point = 15,20,16,21,-4,C2
+Point = 15,14,16,19,-4, Wild Zone 3
+Point = 9,14,14,19,-5,Wild Zone 5
+Point = 15,12,16,13,-4, C3 
+Point = 17,12,19,13,-4, Wild Zone 9
+Point = 9,10,14,13,-5, Wild Zone 4
+Point = 9,6,12,9,-5, Wild Zone 6
+Point = 11,4,12,5,-5, C4
+Point = 7,4,10,5,-6,Wild Zone 7
+Point = 5,4,6,5,-6,Ruins 1
+Point = 13,4,16,5,-5,Wild Zone 8
+Point = 10,2,16,3,-5, Wild Zone 10
+Point = 7,2,9,3,-6, Wild Zone 10
+Point = 17,2,20,3,-4,Wild Zone 11
+Point = 21,2,22,7,-3,Wild Zone 12
+Point = 19,4,20,5,-4,Ruins 2
+
+#-------------------------------
+[1]
+Name = Region Beta
+Filename = mapRegion1.png
+Point = 20,10,21,11,0,Port Beta
+Point = 20,8,21,9,0,Wild Zone 1
+Point = 20,6,21,7,0,C1
+Point = 18,6,19,7,-1,Wild Zone 2
+Point = 16,6,17,7,-1,C2
+Point = 15,8,17,10,-1,Wild Zone 3
+Point = 16,11,17,12,-1,C3
+Point = 13,9,14,10,-2,C4
+Point = 13,11,15,13,-2,Wild Zone 4
+Point = 14,14,15,15,-2,C5
+Point = 16,14,20,18,-1,Wild Zone 5
+Point = 21,16,22,17,0,C6
+Point = 11,11,12,12,C7
+Point = 11,6,12,7,-2,Wild Zone 6
+Point = 8,13,11,16,-3,Wild Zone 7
+Point = 8,10,10,12,-3, Wild Zone 8
+Point = 8,6,10,9,-3, Wild Zone 9
+Point = 9,4,10,5,-3,C8
+Point = 11,3,17,5,-2,Wild Zone 10
+#---------------------------------
+[2]
+Name = Region Gamma
+Filename = mapRegion2.png
+Point = 7,11,8,12,4,Port Gamma
+Point = 7,9,8,10,4, Wild Zone 1
+Point = 7,7,8,8,4,C1
+Point = 9,7,12,10,5,Wild Zone 2
+Point = 13,7,14,8,6,C2
+Point = 13,9,14,10,6,Wild Zone 3
+Point = 15,11,17,12,6, Wild Zone 6
+Point = 13,11,14,12,6, Ruins
+Point = 13,13,17,16,6, Volcano
+Point = 15,7,18,10,6, Wild Zone 4
+Point = 15,3,18,6,6, Wild Zone 5
+Point = 18,11,19,12,7,C3
+Point = 18,13,19,16,7,Wild Zone 7
+Point = 16,17,19,20,7,Wild Zone 8
+Point = 11,17,15,21,6,Wild Zone 9
+Point = 11,11,12,16,5,Wild Zone 10
+
+[3]
+Name = Region Delta
+Filename = mapRegion3.png
+Point = 25,6,26,7,11,Port Delta
+Point = 25,8,26,9,11,Wild Zone 1
+Point = 25,10,26,11,11,C1
+Point = 21,10,24,12,11,Wild Zone 2
+Point = 19,10,20,14,10,Wild Zone 3
+Point = 24,18,27,21,11, Wild Zone 4
+Point = 16,10,18,11,10, C2 
+Point = 16,12,19,14,10, Wild Zone 8
+Point = 16,15,20,16,10, Wild Zone 5
+Point = 14,15,15,20,9, Wild Zone 6
+Point = 14,21,15,22,9,C3
+Point = 12,21,13,22,9,Wild Zone 7
+Point = 10,10,15,14,9,Wild Zone 9
+Point = 8,13,9,14,8,Ruins
+Point = 10,8,11,9,8,C4 
+Point = 10,5,14,7,9,Wild Zone 10
+Point = 6,8,10,9,8,Wild Zone 11
+Point = 4,8,5,9,7,C5
+Point = 4,6,5,7,7,Ruins
