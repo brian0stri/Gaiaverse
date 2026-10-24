@@ -1,6 +1,115 @@
 module ProcWild
 class Chunk
 
+    # Generate continuous cliff paths across the requested group of chunks.
+    # Chunk owns the geometry; WorldGenerator only coordinates map assembly.
+    def self.generate_world_cliff_paths(grid, center_x, center_y, radius)
+      size = ProcWild::CHUNK_SIZE
+
+      min_x = (center_x - radius) * size
+      max_x = (center_x + radius + 1) * size - 1
+      min_y = (center_y - radius) * size
+      max_y = (center_y + radius + 1) * size - 1
+
+      chunks = {}
+
+      # Fetch and generate every chunk before scanning heights or drawing paths.
+      (center_x - radius).upto(center_x + radius) do |cx|
+        (center_y - radius).upto(center_y + radius) do |cy|
+          chunk = grid.get_chunk(cx, cy)
+          chunks[[cx, cy]] = chunk
+
+          size.times do |x|
+            size.times do |y|
+              chunk.cliffPath[x][y] = []
+            end
+          end
+        end
+      end
+
+      # The number of continuous paths equals the highest elevation in this area.
+      max_height = 0
+      chunks.each_value do |chunk|
+        size.times do |x|
+          size.times do |y|
+            tile_height = chunk.height[x][y]
+            next if tile_height.nil?
+            max_height = tile_height if tile_height > max_height
+          end
+        end
+      end
+
+      path_count = max_height.to_i
+      echoln "WORLD CLIFF PATHS: seeds=#{path_count}"
+
+      chunk_at = lambda do |wx, wy|
+        chunks[[wx.div(size), wy.div(size)]]
+      end
+
+      # Water blocks paths. Roads and forest do not constrain cliff geometry.
+      blocked = lambda do |wx, wy|
+        if wx < min_x || wx > max_x || wy < min_y || wy > max_y
+          true
+        else
+          chunk = chunk_at.call(wx, wy)
+          if chunk.nil?
+            true
+          else
+            lx = wx % size
+            ly = wy % size
+            chunk.terrain[lx][ly] == ProcWild::TERRAIN_WATER
+          end
+        end
+      end
+
+      noise_at = lambda do |wx, wy|
+        chunk = chunk_at.call(wx, wy)
+        if chunk
+          chunk.instance_variable_get(:@heightmap).height_at(wx, wy).to_f
+        else
+          0.0
+        end
+      end
+
+      # Preserve markers from every path where paths intersect.
+      write_marker = lambda do |wx, wy, marker|
+        chunk = chunk_at.call(wx, wy)
+        next unless chunk
+
+        lx = wx % size
+        ly = wy % size
+        existing = chunk.cliffPath[lx][ly] || []
+        existing = [existing] unless existing.is_a?(Array)
+        incoming = marker.nil? ? [] : (marker.is_a?(Array) ? marker : [marker])
+        merged = (existing + incoming).compact.uniq
+        chunk.cliffPath[lx][ly] = merged
+      end
+
+      # Give each path its own deterministic random stream.
+      seed = ProcWild::WORLD_SEED.to_i
+      path_count.times do |path_index|
+        path_rng = Random.new(seed + (path_index + 1) * 104729)
+
+        path = ProcWild::CliffPathBuilder.generate(
+          min_x,
+          max_x,
+          min_y,
+          max_y,
+          path_rng,
+          blocked,
+          noise_at,
+          write_marker
+        )
+
+        tile_count = path.respond_to?(:length) ? path.length : 0
+        echoln(
+          "WORLD CLIFF PATH: index=#{path_index + 1}/#{path_count} " +
+          "tiles=#{tile_count} area=#{max_x - min_x + 1}x#{max_y - min_y + 1}"
+        )
+      end
+    end
+
+
     attr_reader :cx
     attr_reader :cy
     attr_accessor :tiles
