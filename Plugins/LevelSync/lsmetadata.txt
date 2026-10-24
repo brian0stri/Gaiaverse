@@ -1,0 +1,23 @@
+# LevelSync metadata
+# Format:
+# - Colors: R,G,B
+# - String lists: value1,value2,value3
+# - Integer lists: 1,2,3
+# Everything past the "#" sign is commented out.
+
+WarningText = Level Sync is enabled. Your Pokemon's stats have been synced to match the trainer's Pokemon. Do you want to continue?
+#BattleMessage = metadata is working~!
+
+# Optional text color settings used by LSSettings
+#MainColor = 255,255,255
+#ShadowColor = 0,0,0
+
+#Comma-separated lists (leave blank to use defaults)
+#WildEncounters = Land,Water,Cave
+#WildMaps = 1,2,3
+#TrainerMaps = 1,2,3
+#TrainerIDs = YOUNGSTER,BUGCATCHER
+#TrainerTypes = YOUNGSTER,BUGCATCHER
+
+#first entry = 0 badges, second is one badge, and so on
+#LevelCapsByBadgeCount = 15,15,20,25,30,35,40,45,50

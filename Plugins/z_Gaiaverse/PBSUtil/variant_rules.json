@@ -1,0 +1,349 @@
+{
+    "VULPIX" : {
+        "0" : ["Gamma", "Delta"],
+        "1" : ["Alpha"]
+    },
+
+    "NINETALES" : {
+        "0" : ["Gamma", "Delta"],
+        "1" : ["Alpha"]
+    },
+
+    "MEOWTH" : {
+        "0" : ["Beta"],
+        "1" : ["Alpha"],
+        "2" : ["Gamma"]
+    },
+
+    "PERSIAN" : {
+        "0" : ["Beta"],
+        "1" : ["Alpha"],
+        "2" : ["Gamma"]
+    },
+    "PERRSERKER" :{
+            "0" : ["Gamma"]
+    },
+    "ZIGZAGOON" : {
+        "0" : ["Beta"],
+        "1" : ["Gamma"]
+    },
+    "LINOONE" : {
+            "0" : ["Beta"],
+            "1" : ["Gamma"]
+    },
+    "OBSTAGOON" : {
+            "0" : ["Gamma"]
+    },
+    "EXEGGUTOR" : {
+        "0" : ["Beta"],
+        "1" : ["Gamma"]
+    },
+    "FARFETCHD" : {
+        "0" : ["Beta"],
+        "1" : ["Gamma"]
+    },
+    "WEEZING" : {
+        "0" : ["Beta","Gamma"],
+        "1" : ["Alpha"]
+    },
+    "MRMIME" : {
+        "0" : ["Beta"],
+        "1" : ["Alpha"]
+    },
+    "MRRIME" : {
+        "0" : ["Alpha"]
+    },
+    "DIGLETT" : {
+        "0" : ["Beta", "Delta"],
+        "1" : ["Gamma"]
+    },
+    "DUGTRIO" : {
+        "0" : ["Beta", "Delta"],
+        "1" : ["Gamma"]
+    },
+    "GRIMER" : {
+        "0" : ["Delta"],
+        "1" : ["Beta"]
+    },
+    "MUK" : {
+        "0" : ["Delta"],
+        "1" : ["Beta"]
+    },
+    "SANDSHREW" : {
+        "0" : ["Delta"],
+        "1" : ["Alpha"]
+    },
+    "SANDSLASH" : {
+        "0" : ["Delta"],
+        "1" : ["Alpha"]
+    },
+    "RATTATA" : {
+        "0" : ["Alpha","Beta", "Delta"],
+        "1" : ["Gamma"]
+    },
+    "RATICATE" : {
+        "0" : ["Alpha","Beta", "Delta"],
+        "1" : ["Gamma"]
+    },
+    "RAICHU" : {
+        "0" :["Alpha","Beta","Delta"],
+        "1" :["Gamma"]
+    },
+    "GROWLITHE" : {
+        "0" :["Beta", "Delta"],
+        "1" :["Alpha"]
+    },
+    "ARCANINE" : {
+        "0" :["Beta", "Delta"],
+        "1" :["Alpha"]
+    },
+    "GEODUDE" : {
+        "0" :["Alpha","Beta", "Delta"],
+        "1" :["Gamma"]
+    },
+    "GRAVELER" : {
+        "0" :["Alpha","Beta", "Delta"],
+        "1" :["Gamma"]
+    },
+    "GOLEM" : {
+        "0" :["Alpha","Beta", "Delta"],
+        "1" :["Gamma"]
+    },
+    "PONYTA" : {
+        "0" :["Gamma", "Delta"],
+        "1" :["Alpha", "Beta"]
+    },
+    "RAPIDASH" : {
+        "0" :["Gamma", "Delta"],
+        "1" :["Alpha", "Beta"]
+    },
+    "SLOWPOKE" : {
+        "0" :["Beta"],
+        "1" :["Gamma"]
+    },
+    "SLOWBRO" : {
+        "0" :["Beta"],
+        "1" :["Gamma"]
+    },
+    "SLOWKING" : {
+        "0" :["Beta"],
+        "1" :["Gamma"]
+    },
+    "BASCULIN" : {
+        "0" : ["Delta"],
+        "1" : ["Beta"],
+        "2" : ["Alpha"]
+    },
+    "VOLTORB" : {
+        "0" :["Beta"],
+        "1" :["Alpha"]
+    },
+    "ELECTRODE" : {
+        "0" :["Beta"],
+        "1" :["Alpha"]
+    },
+    "MAROWAK" : {
+        "0" :["Alpha", "Beta"],
+        "1" :["Gamma", "Delta"]
+    },
+    "TAUROS" : {
+        "0" :["Gamma"],
+        "1" :["Alpha", "Beta", "Delta"],
+        "2" :["Alpha", "Delta"],
+        "3" :["Beta", "Delta"]
+    },
+    "ARTICUNO" : {
+        "0" :["Alpha"],
+        "1" :["Beta"]
+    },
+    "ZAPDOS" : {
+        "0" :["Gamma"],
+        "1" :["Beta"]
+    },
+    "MOLTRES" : {
+        "0" :["Delta"],
+        "1" :["Beta"]
+    },
+    "TYPHLOSION" : {
+        "0" :["Gamma"],
+        "1" :["Delta"]
+    },
+    "WOOPER" : {
+        "0" :["Gamma"],
+        "1" :["Delta"]
+    },
+    "QWILFISH" : {
+        "0" :["Gamma"],
+        "1" :["Alpha"]
+    },
+    "SNEASEL" : {
+        "0" :["Alpha", "Delta"],
+        "1" :["Beta", "Gamma"]
+    },
+    "CORSOLA" : {
+        "0" : ["Gamma"],
+        "1" : ["Beta"]
+    },
+    "SAMUROTT" : {
+        "0" : ["Beta"],
+        "1" : ["Alpha"]
+    },
+    "LILLIGANT" : {
+        "0" : ["Beta"],
+        "1" : ["Gamma"]
+    },
+    "DARUMAKA" : {
+        "0" :["Delta"],
+        "1" :["Alpha"]
+    },
+    "DARMANITAN" : {
+        "0" :["Delta"],
+        "1" :["Delta"],
+        "2" :["Alpha"],
+        "3" :["Alpha"]
+    },
+    "YAMASK" : {
+        "0" :["Delta"],
+        "1" :["Alpha"]
+    },
+    "ZORUA" : {
+        "0" :["Alpha", "Delta"],
+        "1" :["Gamma"]
+    },
+    "ZOROARK" : {
+        "0" :["Alpha", "Delta"],
+        "1" :["Gamma"]
+    },
+    "STUNFISK" : {
+        "0" :["Beta"],
+        "1" :["Alpha"]
+    },
+    "BRAVIARY" : {
+        "0" :["Beta","Delta"],
+        "1" :["Alpha"]
+    },
+    "SLIGGOO" : {
+        "0" :["Beta","Gamma"],
+        "1" :["Delta"]
+    },
+    "GOODRA" : {
+        "0" :["Beta", "Gamma"],
+        "1" :["Delta"]
+    },
+    "AVALUGG" : {
+        "0" :["Alpha", "Gamma", "Beta"],
+        "1" :["Delta"]
+    },
+    "DECIDUEYE" : {
+        "0" :["Gamma"],
+        "1" :["Beta"]
+    },
+    "UNOWN" : {
+        "0" :["Alpha"],
+        "1" :["Beta"],
+        "2" :["Gamma"],
+        "3" :["Delta"],
+        "4" :["Alpha"],
+        "5" :["Beta"],
+        "6" :["Gamma"],
+        "7" :["Delta"],
+        "8" :["Alpha"],
+        "9" :["Beta"],
+        "10" :["Gamma"],
+        "11" :["Delta"],
+        "12" :["Alpha"],
+        "13" :["Beta"],
+        "14" :["Gamma"],
+        "15" :["Delta"],
+        "16" :["Alpha"],
+        "17" :["Beta"],
+        "18" :["Gamma"],
+        "19" :["Delta"],
+        "20" :["Alpha"],
+        "21" :["Beta"],
+        "22" :["Gamma"],
+        "23" :["Delta"],
+        "24" :["Alpha"],
+        "25" :["Beta"],
+        "26" :["Alpha", "Beta","Gamma","Delta"],
+        "27" :["Alpha", "Beta","Gamma","Delta"]
+    },
+    "FLABEBE" : {
+        "0" :["Beta"],
+        "1" :["Gamma"],
+        "2" :["Delta"],
+        "3" :["Alpha"],
+        "4" :["Alpha", "Beta", "Gamma", "Delta"]
+    },
+    "FLOETTE" : {
+        "0" :["Beta"],
+        "1" :["Gamma"],
+        "2" :["Delta"],
+        "3" :["Alpha"],
+        "4" :["Alpha", "Beta", "Gamma", "Delta"],
+        "5" :["Delta"]
+    },
+    "FLORGES" : {
+        "0" :["Beta"],
+        "1" :["Gamma"],
+        "2" :["Delta"],
+        "3" :["Alpha"],
+        "4" :["Alpha", "Beta", "Gamma", "Delta"]
+    },
+    "ORICORIO" : {
+        "0" :["Delta"],
+        "1" :["Beta"],
+        "2" :["Gamma"],
+        "3" :["Alpha"]
+    },
+    "WORMADAM" : {
+        "0" :["Alpha", "Gamma"],
+        "1" :["Delta"],
+        "2" :["Beta"]
+    },
+    "DEERLING" : {
+        "0" :["Beta"],
+        "1" :["Gamma"],
+        "2" :["Delta"],
+        "3" :["Alpha"]
+     },
+     "SAWSBUCK" : {
+        "0" :["Beta"],
+        "1" :["Gamma"],
+        "2" :["Delta"],
+        "3" :["Alpha"]
+     },
+     "SQUAWKABILLY" : {
+         "0" : ["Gamma"],
+         "1" : ["Delta"],
+         "2" : ["Alpha"],
+         "3" : ["Beta"]
+      },
+      "TATSUGIRI" : {
+          "0" : ["Delta"],
+          "1" : ["Gamma"],
+          "2" : ["Alpha"]
+       },
+       "VIVILLON" : {
+            "0" : ["Alpha","Beta","Gamma","Delta"],
+            "1" : ["Alpha"],
+            "2" : ["Alpha","Delta"],
+            "3" : ["Delta"],
+            "4" : ["Alpha", "Beta"],
+            "5" : ["Beta"],
+            "6" : ["Alpha", "Delta"],
+            "7" : ["Beta"],
+            "8" : ["Gamma", "Delta"],
+            "9" : ["Gamma"],
+            "10" : ["Beta","Delta"],
+            "11" : ["Gamma", "Delta"],
+            "12" : ["Delta"],
+            "13" : ["Gamma"],
+            "14" : ["Gamma"],
+            "15" : ["Alpha","Beta"],
+            "16" : ["Alpha"],
+            "17" : ["Gamma"],
+            "18" : ["Alpha"],
+            "19" : ["Alpha", "Beta", "Gamma", "Delta"]
+        }
+}

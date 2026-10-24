@@ -1,0 +1,5 @@
+If you want to create an event ingame that displays the warning, copy the code into its script editor before the battle:
+
+if $LSSettings.LSEnabled && LevelSyncHelper.battle_will_sync?
+  pbMessage(_INTL($LSSettings.LSWarningText))
+end

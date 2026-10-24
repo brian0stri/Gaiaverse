@@ -1,0 +1,4 @@
+Name       = Gaiaverse Gameplay    # The plugin's name
+Version    = 1.0                   # The plugin's version
+Essentials = 21,21.1                # Compatible version(s) of Essentials
+Credits    = juliorain # One or more names

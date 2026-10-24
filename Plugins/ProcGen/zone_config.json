@@ -1,0 +1,24 @@
+{"zone_config": [{
+
+  "A": {
+    "size": 3,
+    "mechanics": [],
+    "max_level": 8,
+    "biomes": ["grass","forest"]
+  },
+
+  "B": {
+    "size": 5,
+    "mechanics": ["cut"],
+    "max_level": 16,
+    "biomes": ["grass","forest","river"]
+  },
+
+  "C": {
+    "size": 8,
+    "mechanics": ["surf"],
+    "max_level": 28,
+    "biomes": ["forest","mountain","swamp"]
+  }
+
+}]}

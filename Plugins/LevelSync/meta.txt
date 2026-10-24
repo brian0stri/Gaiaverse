@@ -1,0 +1,5 @@
+Name       = LevelSync Extension    # The plugin's name
+Version    = 2.0                    # The plugin's version
+Essentials = 21,21.1                # Compatible version(s) of Essentials
+Link       = https://eeveeexpo.com/resources/1874/
+Credits    = juliorain # One or more names
