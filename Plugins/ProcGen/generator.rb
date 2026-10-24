@@ -1,3 +1,131 @@
+module ProcWild
+
+class WorldGenerator
+TILE_GRASS  = 385
+TILE_GRASS2 = 386
+TILE_GRASS3 = 387
+TILE_GRASS4 = 388
+TILE_GRASS5 = 389
+TILE_WATER  = 1097
+TILE_TREE   = 450
+TILE_TALL_GRASS = 390
+TILE_LIGHTGRASS = 401
+TILE_DEBUG =500
+TILE_CLIFF_TL = 1168
+TILE_CLIFF_N = 1169
+TILE_CLIFF_TR = 1170
+TILE_CLIFF_E = 1176
+TILE_CLIFF_TOP = 1177
+TILE_CLIFF_W = 1178
+TILE_CLIFF_BR = 1184
+TILE_CLIFF_S = 1185
+TILE_CLIFF_BL = 1186
+TILE_CLIFF_CORNER_1 = 1192
+TILE_CLIFF_CORNER_2 = 1193
+TILE_CLIFF_CORNER_3 = 1200
+TILE_CLIFF_CORNER_4 = 1201
+TILE_DIRTROAD = 546
+TILE_STAIR = 1162
+
+  def pick_random_grass_tile()
+    r = rand(100)
+    if r < 20
+      return TILE_GRASS2
+    elsif r < 40
+      return TILE_GRASS3
+    elsif r < 60
+      return TILE_GRASS4
+    elsif r < 80
+      return TILE_GRASS5
+    else
+      return TILE_GRASS
+    end
+  end
+
+  
+
+def generate_area(grid, center_x, center_y, radius)
+  echoln "GENERATE_AREA ENTERED: center=#{center_x},#{center_y} radius=#{radius}"
+
+  (-radius..radius).each do |dx|
+    (-radius..radius).each do |dy|
+      grid.get_chunk(center_x + dx, center_y + dy)
+    end
+  end
+
+  echoln "GENERATE_AREA: chunks generated; calling world cliffs"
+  ProcWild::Chunk.generate_world_cliff_paths(grid, center_x, center_y, radius)
+  echoln "GENERATE_AREA: world cliffs finished"
+end
+
+
+
+def cliff_tile_for(marker, _chunk = nil, _x = nil, _y = nil)
+  dirs = marker.is_a?(Array) ? marker.compact.uniq : [marker].compact.uniq
+
+  north = dirs.include?(:north)
+  south = dirs.include?(:south)
+  west  = dirs.include?(:west)
+  east  = dirs.include?(:east)
+
+  # Markers now describe path geometry, not elevation boundaries.
+  # Straight paths are normalized to one representative axis marker by Chunk.
+  return TILE_CLIFF_TL if north && west && !east && !south
+  return TILE_CLIFF_TR if north && east && !west && !south
+  return TILE_CLIFF_BL if south && west && !north && !east
+  return TILE_CLIFF_BR if south && east && !north && !west
+
+  return TILE_CLIFF_N if north && !south && !east && !west
+  return TILE_CLIFF_S if south && !north && !east && !west
+  return TILE_CLIFF_W if west && !east && !north && !south
+  return TILE_CLIFF_E if east && !west && !north && !south
+
+  nil
+end
+
+  def road_tile?(chunk, x, y)
+    return false if x < 0 || y < 0
+    return false if x >= ProcWild::CHUNK_SIZE || y >= ProcWild::CHUNK_SIZE
+    return chunk.roadMask[x][y] if !chunk.roadMask.nil? && !chunk.roadMask[x].nil?
+    chunk.path[x][y]
+  end
+
+def build_RMXP_map(chunk)
+  echoln "USING build_RMXP_map"
+
+  map = RPG::Map.new(ProcWild::CHUNK_SIZE, ProcWild::CHUNK_SIZE)
+
+  ProcWild::CHUNK_SIZE.times do |x|
+    ProcWild::CHUNK_SIZE.times do |y|
+      terrain = chunk.terrain[x][y] 
+
+      # Traversal intent should win: roads override blockers/biome visuals.
+      if road_tile?(chunk, x, y)
+        tile_id = TILE_DIRTROAD
+      elsif terrain == ProcWild::TERRAIN_WATER
+        tile_id = TILE_WATER
+      elsif chunk.cliffPath[x][y] && !chunk.cliffPath[x][y].empty?
+        tile_id = cliff_tile_for(chunk.cliffPath[x][y])
+      elsif chunk.height[x][y] >= 3
+        tile_id = TILE_CLIFF_TOP
+      elsif terrain == ProcWild::TERRAIN_GRASS
+        if chunk.grass[x][y]
+          tile_id = TILE_TALL_GRASS
+        else
+          tile_id = pick_random_grass_tile()
+        end
+      elsif terrain == ProcWild::TERRAIN_FOREST
+        tile_id = pick_random_grass_tile()
+        map.data[x,y,1] = TILE_TREE
+      else
+        tile_id = pick_random_grass_tile()
+      end
+
+      map.data[x,y,0] = tile_id
+
+    end
+  end
+
   return map
 
 end
