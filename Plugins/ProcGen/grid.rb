@@ -11,7 +11,7 @@ module ProcWild
       (region_y * 668265) ^
       (macro_x * 144269) ^
       (macro_y * 700001) ^
-      WORLD_SEED
+      world_seed
     ) & 0xffffffff
 
     r = value % 100
@@ -74,7 +74,7 @@ module ProcWild
         b = @anchors[b_id]
         raise "Anchor missing!" if a.nil? || b.nil?
 
-        rng = Random.new((a[:x] * 9999 + b[:x] * 7777) ^ ProcWild::WORLD_SEED)
+        rng = Random.new((a[:x] * 9999 + b[:x] * 7777) ^ ProcWild.world_seed)
         points = route_between(a, b)
         register_route(points)
 
@@ -256,7 +256,7 @@ module ProcWild
       fx, fy = from
       tx, ty = to
 
-      hash = ((fx * 92821) ^ (fy * 68917) ^ (tx * 1237) ^ (ty * 3253) ^ ProcWild::WORLD_SEED)
+      hash = ((fx * 92821) ^ (fy * 68917) ^ (tx * 1237) ^ (ty * 3253) ^ ProcWild.world_seed)
       if (hash & 1) == 0
         [tx, fy]
       else

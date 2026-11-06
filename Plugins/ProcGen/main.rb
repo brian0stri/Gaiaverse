@@ -1,22 +1,53 @@
-# === DEBUG TILE HOOK ===
+# === DEBUG TILE HOOK (OPT-IN) ===
 class Table
-  alias_method :old_set, :[]= unless method_defined?(:old_set)
+  alias_method :procwild_original_set, :[]= unless method_defined?(:procwild_original_set)
 
   def []=(*args)
-    unless $printed_tile_trace
+    if defined?(ProcWild::DEBUG_TILE_WRITE_TRACE) &&
+       ProcWild::DEBUG_TILE_WRITE_TRACE &&
+       !$printed_tile_trace
       echoln "=== FIRST TILE WRITE DETECTED ==="
       caller[0..10].each { |c| echoln c }
       $printed_tile_trace = true
     end
-    old_set(*args)
+    procwild_original_set(*args)
   end
 end
 
 module ProcWild
 
+  # Enable only while diagnosing tile write callsites.
+  DEBUG_TILE_WRITE_TRACE = false
+
   TILE_SIZE = 32
   CHUNK_SIZE = 32
   WORLD_SEED = rand(1_000_000)
+
+  def self.world_seed
+    if @world_seed
+      if defined?($PokemonGlobal) && $PokemonGlobal &&
+         !$PokemonGlobal.instance_variable_defined?(:@procwild_world_seed)
+        $PokemonGlobal.instance_variable_set(:@procwild_world_seed, @world_seed)
+      end
+      return @world_seed
+    end
+
+    stored = nil
+    if defined?($PokemonGlobal) && $PokemonGlobal
+      if $PokemonGlobal.instance_variable_defined?(:@procwild_world_seed)
+        stored = $PokemonGlobal.instance_variable_get(:@procwild_world_seed)
+      end
+    end
+
+    seed = stored.nil? ? WORLD_SEED : stored
+    @world_seed = seed.to_i
+
+    if defined?($PokemonGlobal) && $PokemonGlobal
+      $PokemonGlobal.instance_variable_set(:@procwild_world_seed, @world_seed)
+    end
+
+    @world_seed
+  end
 
   TERRAIN_GRASS  = :grass
   TERRAIN_FOREST = :forest

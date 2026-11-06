@@ -1,0 +1,10 @@
+CLIFF CORNER ASSIGNMENT REPORT
+generated_at=2026-10-27 18:34:44 -0400
+center=(0,0) radius=1
+fields: count | source | key | type | dirs | in_face | out_face | turn | cross | tile | samples
+
+7 | classifier | sw | concave | south+west | east | north | left | -1 | 1201 | (-19,43) (-9,41) (-3,42) (-1,45) (3,47) (5,48) (6,49)
+6 | classifier | nw | convex | north+west | west | north | right | 1 | 1188 | (-25,49) (-22,44) (-20,42) (-7,43) (15,50) (16,49)
+6 | classifier | ne | convex | east+north | north | east | right | 1 | 1168 | (-9,43) (-3,45) (-1,47) (3,48) (5,49) (6,50)
+5 | classifier | se | concave | east+south | north | west | left | -1 | 1192 | (-25,44) (-22,42) (-20,41) (-7,42) (15,49)
+1 | classifier | se | convex | east+south | east | south | right | 1 | 1170 | (61,56)

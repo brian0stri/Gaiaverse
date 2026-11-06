@@ -1,6 +1,6 @@
 module ProcWild
   class HeightMap
-    def initialize(seed = WORLD_SEED)
+    def initialize(seed = ProcWild.world_seed)
       @seed = seed
     end
 
